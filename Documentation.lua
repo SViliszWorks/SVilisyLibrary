@@ -1,5 +1,5 @@
 -- Define Library
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheRealLxops/Vynixius-ui-lib-/main/source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SViliszWorks/SVilisyLibrary/main/source.lua?token=GHSAT0AAAAAAB2RO4C3PVA5BHEGRZVKNHAUZCUB46A"))()
 
 -- Create SubSection's Elements
 local SubEelements = true
