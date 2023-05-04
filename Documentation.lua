@@ -97,48 +97,48 @@ local function SubElementsFunc()
 	if SubEelements then
 		
 		-- Create Sub-Button
-		local Button = Section:AddButton("Sub-Button", function()
+		local SubButton = SubSection:AddButton("Sub-Button", function()
 			Library:Notify( {title = "Button", text = "Pressed"})
 		end)
 
 		-- Create Sub-Toggle
-		local Toggle = Section:AddToggle("Sub-Toggle", {flag = "Toggle_Flag", default = false}, function(bool)
+		local SubToggle = SubSection:AddToggle("Sub-Toggle", {flag = "Toggle_Flag", default = false}, function(bool)
 			Library:Notify( {title = "Toggle", text = "Current Bool: "..bool})
 		end)
 
 		-- Create Sub-Label
-		local Label = Section:AddLabel("Sub-Label")
+		local SubLabel = SubSection:AddLabel("Sub-Label")
 
 		-- Create Sub-DualLabel
-		local DualLabel = Section:AddDualLabel({"Sub-Dual", "Label"})
+		local SubDualLabel = SubSection:AddDualLabel({"Sub-Dual", "Label"})
 
 		-- Create Sub-ClipboardLabel
-		local ClipboardLabel = Section:AddClipboardLabel("Sub-ClipboardLabel", function()
+		local SubClipboardLabel = SubSection:AddClipboardLabel("Sub-ClipboardLabel", function()
 			return "Text-Copied"
 		end)
 
 		-- Create Sub-Box
-		local Box = Section:AddBox("Sub-Box", {fireonempty = true}, function(text)
+		local SubBox = SubSection:AddBox("Sub-Box", {fireonempty = true}, function(text)
 			Library:Notify( {title = "Box", text = ""..text..""})
 		end)
 
 		-- Create Sub-Bind
-		local Bind = Section:AddBind("Sub-Bind", Enum.KeyCode.RightShift, {toggleable = true, default = false, flag = "Bind_Flag"}, function(keycode)
+		local SubBind = SubSection:AddBind("Sub-Bind", Enum.KeyCode.RightShift, {toggleable = true, default = false, flag = "Bind_Flag"}, function(keycode)
 			Library:Notify( {title = "Bind", text = "Bind Was Changed: "..keycode})
 		end)
 
 		-- Create Sub-Slider
-		local Slider = Section:AddSlider("Sub-Slider", 1, 100, 50, {toggleable = true, default = false, flag = "Slider_Flag", fireontoggle = true, fireondrag = true, rounded = true}, function(val, bool)
+		local SubSlider = SubSection:AddSlider("Sub-Slider", 1, 100, 50, {toggleable = true, default = false, flag = "Slider_Flag", fireontoggle = true, fireondrag = true, rounded = true}, function(val, bool)
 			print("Slider Value:", val, " - Slider Bool:", bool)
 		end)
 
 		-- Create Sub-Dropdown
-		local Dropdown = Section:AddDropdown("Sub-Dropdown", {"Item1", "Item2", "Item3"}, {default = "Item1"}, function(selected)
+		local SubDropdown = SubSection:AddDropdown("Sub-Dropdown", {"Item1", "Item2", "Item3"}, {default = "Item1"}, function(selected)
 			Library:Notify( {title = "Dropdown", text = ""..selected..""})
 		end)
 
 		-- Create Sub-Picker {Buggy With Rainbow}
-		local Picker = Section:AddPicker("Sub-Picker", {color = Color3.fromRGB(255, 0, 0)}, function(color)
+		local SubPicker = SubSection:AddPicker("Sub-Picker", {color = Color3.fromRGB(255, 0, 0)}, function(color)
 			Window:SetAccent(color)
 		end)
 		
