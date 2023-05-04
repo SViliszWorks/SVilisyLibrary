@@ -37,8 +37,8 @@ local Player = Players.LocalPlayer
 local Mouse = Player:GetMouse()
 
 local SelfModules = {
-	UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheRealLxops/Vynixius-ui-lib-/main/UI.lua"))(),
-	Directory = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheRealLxops/Vynixius-ui-lib-/main/Directory.lua"))(),
+	UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/SViliszWorks/SVilisyLibrary/main/UI.lua?token=GHSAT0AAAAAAB2RO4C26OTLBPYBPULVAI4WZCUAVOA"))(),
+	Directory = loadstring(game:HttpGet("https://raw.githubusercontent.com/SViliszWorks/SVilisyLibrary/main/Directory.lua?token=GHSAT0AAAAAAB2RO4C3TXQABB67ARHELNFKZCUAVZQ"))(),
 }
 local Storage = { Connections = {}, Tween = { Cosmetic = {} } }
 
@@ -47,7 +47,7 @@ local ListenForInput = false
 -- Directory
 
 local Directory = SelfModules.Directory.Create({
-	["Vynixius UI Library"] = {
+	["SVilisz UI Library"] = {
 		"Configs",
 	},
 })
@@ -83,7 +83,7 @@ end
 -- Functions
 
 local ScreenGui = SelfModules.UI.Create("ScreenGui", {
-	Name = "Vynixius UI Library",
+	Name = "SVilisz UI Library",
 	ZIndexBehavior = Enum.ZIndexBehavior.Sibling,
 })
 
